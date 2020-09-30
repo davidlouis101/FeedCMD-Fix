@@ -23,8 +23,8 @@ class main extends PluginBase implements Listener {
 
         if ($sender->getName() == "feed") {
 
-            $sender->sendMessage("§aTu as bien été nourris !");
-            $sender->addFood("20");
+            $sender->sendMessage("§aTu as bien été nourris!");
+            $sender->setFood(20);
         }
         break;
         }
