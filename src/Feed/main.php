@@ -26,7 +26,7 @@ class main extends PluginBase implements Listener {
       case "feed":
         if($sender instanceof Player){
            if($sender->hasPermission("feed.cmd")){
-              $sender->sendMessage(TextFormat;:GREEN . "Tu as bien été nourris!");
+              $sender->sendMessage(TextFormat::GREEN . "Tu as bien été nourris!");
               $sender->setFood(20);
           }
         }
