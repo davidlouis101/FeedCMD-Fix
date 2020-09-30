@@ -7,6 +7,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\event\Listener;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
+use pocketmine\utils\TextFormat;
 
 class main extends PluginBase implements Listener {
 
@@ -23,7 +24,7 @@ class main extends PluginBase implements Listener {
 
         if ($sender->getName() == "feed") {
 
-            $sender->sendMessage("§aTu as bien été nourris !");
+            $sender->sendMessage(TextFormat::GREEN . "Tu as bien été nourris !");
             $sender->setFood(20);
         }
         break;
