@@ -20,17 +20,16 @@ class main extends PluginBase implements Listener {
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
 
-        if ($sender instanceof Player){
-
-        if ($sender->getName() == "feed") {
-
-            $sender->sendMessage(TextFormat::GREEN . "Tu as bien été nourris !");
-            $sender->setFood(20);
+    switch($command->getName()){
+      case "feed":
+        if($sender instanceof Player){
+           if($sender->hasPermission("feed.cmd")){
+          $sender->sendMessage(TextFormat;:GREEN . "Tu as bien été nourris!");
+          $sender->setFood(20);
+          }
         }
         break;
-        }
-
-        return true;
-
     }
+    return true;
+  }
 }
