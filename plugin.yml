@@ -2,4 +2,15 @@ name: Feed
 version: 1.0.0
 main: Feed\main
 api: 3.0.0
-author: NewTheBuilder
+author: 
+- NewTheBuilder
+- davidlouis101
+commands:
+ feed:
+  description: Feed
+  usage: "/feed"
+  permission: feed.cmd
+
+  permission:
+   feed.cmd:
+    default: OP
